@@ -1,0 +1,681 @@
+2023/10/30 22:07:54 main.go:15: log test
+2023/10/30 22:16:08 main.go:15: log test
+2023/10/31 22:13:19 users.go:65: near "where": syntax error
+2023/10/31 22:15:54 users.go:65: near "where": syntax error
+2023/10/31 22:16:14 users.go:65: near "where": syntax error
+2023/10/31 22:19:26 users.go:65: near "where": syntax error
+2023/10/31 22:21:14 users.go:65: near "where": syntax error
+2023/11/04 09:20:30 server.go:3214: http: panic serving [::1]:52163: open app/views/templates/loyout.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x1400010b590?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174000}, {0x1028229a0, 0x10289cd48}, {0x14000135a88?, 0x2, 0x140000123e0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174000?}, 0x14000135ae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x14000135b08?, {0x1028a0a68?, 0x14000174000?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174000}, 0x1400013a100)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400010b470?}, {0x1028a0a68?, 0x14000174000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000152120, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:20:31 server.go:3214: http: panic serving [::1]:52164: open app/views/templates/loyout.html: no such file or directory
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x1400010b680?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x140001741c0}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000012440?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x140001741c0?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x140001741c0?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x140001741c0}, 0x1400021a000)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000204090?}, {0x1028a0a68?, 0x140001741c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000208000, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:20:31 server.go:3214: http: panic serving [::1]:52169: open app/views/templates/loyout.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x1400010b860?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174380}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x140000124b0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174380?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000174380?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174380}, 0x1400013a200)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400010b7a0?}, {0x1028a0a68?, 0x14000174380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x140001523f0, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:20:32 server.go:3214: http: panic serving [::1]:52170: open app/views/templates/loyout.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x1400010b9e0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174540}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000012520?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174540?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000174540?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174540}, 0x1400013a300)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400010b920?}, {0x1028a0a68?, 0x14000174540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x140001525a0, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:20:32 server.go:3214: http: panic serving [::1]:52175: open app/views/templates/loyout.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x1400010bb60?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174700}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000012590?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174700?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000174700?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174700}, 0x1400013a400)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400010baa0?}, {0x1028a0a68?, 0x14000174700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000152750, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:20:33 server.go:3214: http: panic serving [::1]:52176: open app/views/templates/loyout.html: no such file or directory
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x1400010bce0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x140001748c0}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000012600?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x140001748c0?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x140001748c0?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x140001748c0}, 0x1400013a500)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400010bc20?}, {0x1028a0a68?, 0x140001748c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000152900, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:20:33 server.go:3214: http: panic serving [::1]:52181: open app/views/templates/loyout.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x1400010be60?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174a80}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000012670?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174a80?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000174a80?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174a80}, 0x1400013a600)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400010bda0?}, {0x1028a0a68?, 0x14000174a80?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000152ab0, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:20:38 server.go:3214: http: panic serving [::1]:52204: open app/views/templates/loyout.html: no such file or directory
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x14000204330?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000230000}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000212040?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000230000?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000230000?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000230000}, 0x1400021a200)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000204270?}, {0x1028a0a68?, 0x14000230000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000208090, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:11 server.go:3214: http: panic serving [::1]:52341: open app/views/templates/loyout.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140002044b0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x140002301c0}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x140002120b0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x140002301c0?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x140002301c0?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x140002301c0}, 0x1400021a300)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140002043f0?}, {0x1028a0a68?, 0x140002301c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000208240, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:12 server.go:3214: http: panic serving [::1]:52342: open app/views/templates/loyout.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140001fa0c0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174c40}, {0x1028229a0, 0x10289cd48}, {0x1400005fa88?, 0x2, 0x140000126f0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174c40?}, 0x1400005fae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005fb08?, {0x1028a0a68?, 0x14000174c40?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174c40}, 0x1400013a800)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fa000?}, {0x1028a0a68?, 0x14000174c40?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x140002083f0, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:12 server.go:3214: http: panic serving [::1]:52343: open app/views/templates/loyout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140001fa180?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174e00}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000012750?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174e00?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000174e00?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174e00}, 0x1400021a400)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140002045d0?}, {0x1028a0a68?, 0x14000174e00?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000208480, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:12 server.go:3214: http: panic serving [::1]:52350: open app/views/templates/loyout.html: no such file or directory
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140001fa300?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000174fc0}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x140000127c0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000174fc0?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000174fc0?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000174fc0}, 0x1400013a900)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fa240?}, {0x1028a0a68?, 0x14000174fc0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000152fc0, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:13 server.go:3214: http: panic serving [::1]:52356: open app/views/templates/loyout.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140001fa540?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000175180}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000012840?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000175180?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000175180?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000175180}, 0x1400013ab00)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fa480?}, {0x1028a0a68?, 0x14000175180?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000153200, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:14 server.go:3214: http: panic serving [::1]:52357: open app/views/templates/loyout.html: no such file or directory
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140002046f0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000230380}, {0x1028229a0, 0x10289cd48}, {0x1400005ba88?, 0x2, 0x14000212130?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000230380?}, 0x1400005bae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005bb08?, {0x1028a0a68?, 0x14000230380?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000230380}, 0x1400021a500)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000204630?}, {0x1028a0a68?, 0x14000230380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x140001533b0, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:14 server.go:3214: http: panic serving [::1]:52358: open app/views/templates/loyout.html: no such file or directory
+goroutine 47 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140002047b0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000230540}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000212190?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000230540?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000230540?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000230540}, 0x1400013ac00)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fa660?}, {0x1028a0a68?, 0x14000230540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000153440, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:14 server.go:3214: http: panic serving [::1]:52363: open app/views/templates/loyout.html: no such file or directory
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x14000204930?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000230700}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000212200?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000230700?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000230700?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000230700}, 0x1400021a600)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000204870?}, {0x1028a0a68?, 0x14000230700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000208750, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:14 server.go:3214: http: panic serving [::1]:52364: open app/views/templates/loyout.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x14000098090?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x140000ae000}, {0x1028229a0, 0x10289cd48}, {0x1400005ba88?, 0x2, 0x140000aa010?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x140000ae000?}, 0x1400005bae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005bb08?, {0x1028a0a68?, 0x140000ae000?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x140000ae000}, 0x1400021a800)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000204ab0?}, {0x1028a0a68?, 0x140000ae000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000208900, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:14 server.go:3214: http: panic serving [::1]:52365: open app/views/templates/loyout.html: no such file or directory
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x14000098180?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x140000ae1c0}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x140000aa070?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x140000ae1c0?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x140000ae1c0?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x140000ae1c0}, 0x1400021a700)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000204a50?}, {0x1028a0a68?, 0x140000ae1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000208990, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:21:14 server.go:3214: http: panic serving [::1]:52366: open app/views/templates/loyout.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x14000204b70?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x140002308c0}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x14000212280?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x140002308c0?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x140002308c0?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x140002308c0}, 0x140000fa000)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140000982a0?}, {0x1028a0a68?, 0x140002308c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000094240, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:24 server.go:3214: http: panic serving [::1]:52663: open app/views/templates/loyout.html: no such file or directory
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140001fa840?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000175340}, {0x1028229a0, 0x10289cd48}, {0x1400005aa88?, 0x2, 0x140000128d0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000175340?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1028a0a68?, 0x14000175340?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000175340}, 0x1400013ae00)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fa780?}, {0x1028a0a68?, 0x14000175340?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x140001534d0, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:42 server.go:3214: http: panic serving [::1]:52745: open app/views/templates/loyout.html: no such file or directory
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10284de80?, 0x140001fa9c0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1028a0a68?, 0x14000175500}, {0x1028229a0, 0x10289cd48}, {0x1400005ca88?, 0x2, 0x14000012940?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1028a0a68?, 0x14000175500?}, 0x1400005cae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005cb08?, {0x1028a0a68?, 0x14000175500?}, 0x10259b6e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x102b28920?, {0x1028a0a68, 0x14000175500}, 0x1400013af00)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140001fa900?}, {0x1028a0a68?, 0x14000175500?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000153680, {0x1028a11d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:49 server.go:3214: http: panic serving [::1]:52782: template: top.html:1: unexpected "content" in define clause
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x14000012500?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x14000174000}, {0x10482a9a0, 0x1048a4d48}, {0x14000135a88?, 0x2, 0x140000123e0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x14000174000?}, 0x14000135ae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x14000135b08?, {0x1048a8a68?, 0x14000174000?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x14000174000}, 0x1400013a100)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400010b470?}, {0x1048a8a68?, 0x14000174000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000156090, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:50 server.go:3214: http: panic serving [::1]:52783: template: top.html:1: unexpected "content" in define clause
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x14000012650?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x140001741c0}, {0x10482a9a0, 0x1048a4d48}, {0x1400005aa88?, 0x2, 0x14000012530?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x140001741c0?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1048a8a68?, 0x140001741c0?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x140001741c0}, 0x1400019a000)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000184090?}, {0x1048a8a68?, 0x140001741c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000188000, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:50 server.go:3214: http: panic serving [::1]:52788: template: top.html:1: unexpected "content" in define clause
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x140000127b0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x14000174380}, {0x10482a9a0, 0x1048a4d48}, {0x1400005aa88?, 0x2, 0x14000012690?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x14000174380?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1048a8a68?, 0x14000174380?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x14000174380}, 0x1400013a200)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400022c0f0?}, {0x1048a8a68?, 0x14000174380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000156360, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:50 server.go:3214: http: panic serving [::1]:52789: template: top.html:1: unexpected "content" in define clause
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x14000192140?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x140001b0000}, {0x10482a9a0, 0x1048a4d48}, {0x1400005aa88?, 0x2, 0x14000192020?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x140001b0000?}, 0x1400005aae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x1400005ab08?, {0x1048a8a68?, 0x140001b0000?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x140001b0000}, 0x1400013a300)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400022c690?}, {0x1048a8a68?, 0x140001b0000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x1400009a000, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:50 server.go:3214: http: panic serving [::1]:52790: template: top.html:1: unexpected "content" in define clause
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x14000192290?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x140001b01c0}, {0x10482a9a0, 0x1048a4d48}, {0x140000aaa88?, 0x2, 0x14000192170?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x140001b01c0?}, 0x140000aaae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140000aab08?, {0x1048a8a68?, 0x140001b01c0?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x140001b01c0}, 0x140000b4000)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140000960f0?}, {0x1048a8a68?, 0x140001b01c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x1400009a090, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:50 server.go:3214: http: panic serving [::1]:52791: template: top.html:1: unexpected "content" in define clause
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x140001923f0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x140001b0380}, {0x10482a9a0, 0x1048a4d48}, {0x140000aaa88?, 0x2, 0x140001922d0?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x140001b0380?}, 0x140000aaae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140000aab08?, {0x1048a8a68?, 0x140001b0380?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x140001b0380}, 0x1400019a100)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x14000184cc0?}, {0x1048a8a68?, 0x140001b0380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x140001882d0, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:22:51 server.go:3214: http: panic serving [::1]:52792: template: top.html:1: unexpected "content" in define clause
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x14000192550?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x140001b0540}, {0x10482a9a0, 0x1048a4d48}, {0x140000aaa88?, 0x2, 0x14000192430?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x140001b0540?}, 0x140000aaae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140000aab08?, {0x1048a8a68?, 0x140001b0540?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x140001b0540}, 0x1400019a200)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140001852c0?}, {0x1048a8a68?, 0x140001b0540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000188480, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:23:21 server.go:3214: http: panic serving [::1]:52917: template: top.html:1: unexpected "content" in define clause
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x140000b2170?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x140000cc000}, {0x10482a9a0, 0x1048a4d48}, {0x140000aca88?, 0x2, 0x140000b2050?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x140000cc000?}, 0x140000acae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140000acb08?, {0x1048a8a68?, 0x140000cc000?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x140000cc000}, 0x140000b4300)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x140000962d0?}, {0x1048a8a68?, 0x140000cc000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x1400009a120, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/04 09:23:47 server.go:3214: http: panic serving [::1]:53026: template: top.html:1: unexpected "content" in define clause
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb0
+panic({0x10483f4c0?, 0x14000012920?})
+	/usr/local/go/src/runtime/panic.go:920 +0x26c
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+sqlite/app/controllers.generateHTML({0x1048a8a68?, 0x14000174540}, {0x10482a9a0, 0x1048a4d48}, {0x140000aaa88?, 0x2, 0x14000012800?})
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/server.go:16 +0x1d8
+sqlite/app/controllers.top({0x1048a8a68?, 0x14000174540?}, 0x140000aaae8?)
+	/Users/hatasatoki/go/src/practice-go/udemy/todo_app/app/controllers/root_main.go:8 +0x70
+net/http.HandlerFunc.ServeHTTP(0x140000aab08?, {0x1048a8a68?, 0x14000174540?}, 0x1045a36e8?)
+	/usr/local/go/src/net/http/server.go:2136 +0x38
+net/http.(*ServeMux).ServeHTTP(0x104b30920?, {0x1048a8a68, 0x14000174540}, 0x1400013a400)
+	/usr/local/go/src/net/http/server.go:2514 +0x144
+net/http.serverHandler.ServeHTTP({0x1400022c750?}, {0x1048a8a68?, 0x14000174540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0xbc
+net/http.(*conn).serve(0x14000156510, {0x1048a91d8, 0x1400010b380})
+	/usr/local/go/src/net/http/server.go:2009 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x4cc
+2023/11/06 12:28:46 root_main.go:10: &{GET / HTTP/1.1 1 1 map[Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ja,en-US;q=0.9,en;q=0.8] Cache-Control:[max-age=0] Connection:[keep-alive] Sec-Ch-Ua:["Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[document] Sec-Fetch-Mode:[navigate] Sec-Fetch-Site:[none] Sec-Fetch-User:[?1] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:60750 / <nil> <nil> <nil> 0x1400007e370}
+2023/11/06 12:28:46 root_main.go:10: &{GET /favicon.ico HTTP/1.1 1 1 map[Accept:[image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ja,en-US;q=0.9,en;q=0.8] Connection:[keep-alive] Referer:[http://localhost:8080/] Sec-Ch-Ua:["Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[image] Sec-Fetch-Mode:[no-cors] Sec-Fetch-Site:[same-origin] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:60750 /favicon.ico <nil> <nil> <nil> 0x140000a0050}
+2023/11/06 12:28:51 root_main.go:10: &{GET /favicon.ico HTTP/1.1 1 1 map[Accept:[image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ja,en-US;q=0.9,en;q=0.8] Connection:[keep-alive] Referer:[http://localhost:8080/signup] Sec-Ch-Ua:["Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[image] Sec-Fetch-Mode:[no-cors] Sec-Fetch-Site:[same-origin] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:60768 /favicon.ico <nil> <nil> <nil> 0x140000a02d0}
+2023/11/06 12:29:00 root_main.go:10: &{GET /favicon.ico HTTP/1.1 1 1 map[Accept:[image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ja,en-US;q=0.9,en;q=0.8] Connection:[keep-alive] Referer:[http://localhost:8080/signup] Sec-Ch-Ua:["Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"] Sec-Ch-Ua-Mobile:[?0] Sec-Ch-Ua-Platform:["macOS"] Sec-Fetch-Dest:[image] Sec-Fetch-Mode:[no-cors] Sec-Fetch-Site:[same-origin] User-Agent:[Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:60810 /favicon.ico <nil> <nil> <nil> 0x140000a0460}
+2023/11/08 22:24:00 root_main.go:24: sql: no rows in result set
+2023/11/08 22:24:01 root_main.go:24: sql: no rows in result set
+2023/11/08 22:25:39 root_main.go:24: sql: no rows in result set
+2023/11/08 22:25:39 root_main.go:24: sql: no rows in result set
+2023/11/08 22:27:21 root_main.go:24: sql: no rows in result set
+2023/11/08 22:27:21 root_main.go:24: sql: no rows in result set
+2023/11/08 22:29:43 root_main.go:25: sql: no rows in result set
+2023/11/08 22:29:43 root_main.go:25: sql: no rows in result set
+2023/11/08 22:33:28 root_main.go:25: sql: no rows in result set
+2023/11/08 22:33:28 root_main.go:25: sql: no rows in result set
